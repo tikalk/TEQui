@@ -176,9 +176,11 @@ this.loadTEQsForUser = function(loginInfo){
       var TEQ_subjects = [];
       var TEQ_subjectsGeneral = new TEQ_subject('General',['Java Language','Database'])
       var TEQ_subjectsTest = new TEQ_subject('Test',['BigData'])
+	  var TEQ_subjectsDevOps = new TEQ_subject('DevOps',['BigData'])
       TEQs.push(new TEQ('JAVA',[TEQ_subjectsGeneral,TEQ_subjectsTest]))
       TEQs.push(new TEQ('JAVA Script',[TEQ_subjectsTest]))
       TEQs.push(new TEQ('.NET',[TEQ_subjectsTest]))
+	  TEQs.push(new TEQ('DevOps',[TEQ_subjectsDevOps]))
       console.log(TEQs,TEQ_subjects);
       localStorage.setItem('TEQ_domains',JSON.stringify(TEQ_domains));
       localStorage.setItem('TEQs',JSON.stringify(TEQs));
