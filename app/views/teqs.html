@@ -1,0 +1,61 @@
+ <ul class="nav nav-pills pull-right">
+    <li ng-repeat="teq in teqs" ng-class="{active:teq.active}"  ><a ng-click="selectTeq(teq)" href="">{{teq.name}}</a></li>
+ </ul>
+
+ 
+ <div ng-repeat="subject in selectedTeq.subjects">
+
+
+ 	<h2 class="row" > <span class="label label-primary  ">{{subject.name}}</span></h2>
+ 	 
+ 	
+ 	  <div ng-repeat="domain in subject.domains">
+ 	
+ 	  	<div class="teq-domain row">
+		 	<h5 >
+		 		<span class="label label-info ">{{domain.name}}</span>
+		 		
+		 		<!-- <span class="label label-default pull-right "> Level Of Knowledge </span>
+		 		<span class="pull-right">-----</span>
+		 		<span class="label label-primary pull-right "> Years of experience </span>
+		 		 -->
+				
+		 	</h5>
+
+		 	
+		 	
+	 	</div>
+ 		 <div ng-repeat="question in domain.questions" class="row teq-question-row" 
+ 		 ng-class="{'teq-question-row-filled':question.years>0}">
+ 				<span class="teq-question ">
+ 					<div>{{$index+1}}.{{question.txt}}   <!-- getAnswer(subject,domain,$index) --></span>
+ 				  <div class="pull-right " >
+ 				
+			 		<div class="pull-right " ng-class="{'teq-beginer-selected' : question.level == '1', 'teq-developer-selected' : question.level == '2', 'teq-expert-selected' : question.level == '3' }">	
+					    <span class="label label-default teq-bar teq-beginer-marker"  title="Beginer" ng-click="toggleLevelExperience(question,'1')">1</span> 
+					     <span class="label label-default teq-beginer" ng-click="toggleLevelExperience(question,'1')">Beginer</span> 
+					    <span class="label label-default teq-bar teq-developer-marker" title="Developer"  ng-click="toggleLevelExperience(question,'2')">2</span>  
+					    <span class="label label-default teq-developer" ng-click="toggleLevelExperience(question,'2')">Developer</span> 
+					    <span  class="label label-default teq-bar teq-expert-marker" title="Expert" ng-click="toggleLevelExperience(question,'3')">3</span>  
+					     <span class="label label-default teq-expert" ng-click="toggleLevelExperience(question,'3')">Expert</span> 
+					</div>	
+					<div class="pull-left">
+						<div style=" padding-bottom: 5px;"><span  title="Years of experience" class="label label-default " ng-class="{'label-info':question.years>0}"	>{{question.years}}</span></div>
+
+	 				<input  title="Years of experience" style="width: 100px" type="range" name="points" step="0.1" min="0" max="10" value="0" 
+					ng-model="question.years"/>
+	 				
+                    </div>
+                    </div>
+                 
+ 			</div>	
+ 		</div>
+ 	</div>
+ 
+ 	
+ </div>
+
+ <div class="pull-right row">
+    <span ng-click="print()" class="btn btn-info">Print</span> 
+ 	<span ng-click="save()" class="btn btn-success">Save</span>
+ </div>
