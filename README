@@ -2,5 +2,13 @@ I have used bower to install angular
 and ui.bootstarp 
 assuming you have yo + bower on your computer.
 
+run the following :
+
+1.npm install -g generator-angular
+2.yo angular
+3.checkout TEQui from git and replace app directory with the one in git
+
+
+
 run command:
 grunt server
