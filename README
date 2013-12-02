@@ -1,0 +1,6 @@
+I have used bower to install angular
+and ui.bootstarp 
+assuming you have yo + bower on your computer.
+
+run command:
+grunt server
