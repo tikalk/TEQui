@@ -11,7 +11,7 @@ run command:
 grunt server
 
 
-once the server run you need, and you can see HTML pagr on your browser, click on "teq builder" tab and click Build button, this will create on your browser teqs samples.
+once the server run, and you can see the HTML pagr on your browser, click on "teq builder" tab then and click "Build!" button, this will create on your browser teqs samples.
 to chnage the teqs and update app.js see "init" function in "repositoryService".
 
 Note: this is only initilal step for moving repository to server, the current state save the TEQs on localstorage. 
