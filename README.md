@@ -18,8 +18,8 @@ Note: this is only initilal step for moving repository to server, the current st
 
 
 
-https://github.com/
 
-![alt tag](https://raw.github.com/tikalk/TEQui/master/screenshots/teq-screen-login.png)
-![alt tag](https://raw.github.com/tikalk/TEQui/master/screenshots/teq-screen-builder.png)
-![alt tag](https://raw.github.com/tikalk/TEQui/master/screenshots/teq-screen.png)
+
+![Login screen](https://raw.github.com/tikalk/TEQui/master/screenshots/teq-screen-login.png)
+![Builder Screen](https://raw.github.com/tikalk/TEQui/master/screenshots/teq-screen-builder.png)
+![TEQ Screen](https://raw.github.com/tikalk/TEQui/master/screenshots/teq-screen.png)
